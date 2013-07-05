@@ -3,6 +3,7 @@ snippets
 
 lalop's collection of yasnippets in ~/.emacs.d/snippets/
 
+update_snippets.rb is for copying over to an elpa snippets directory.  It might not be needed, as newer versions of yasnippets look in the ~/.emacs.d/snippets/ directory.
 
 
 Licencing stuff
