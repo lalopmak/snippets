@@ -7,7 +7,7 @@ update_snippets.rb is for copying over to an elpa snippets directory.  It might 
 
 
 Licencing stuff
-========
+-----
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
