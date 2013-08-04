@@ -3,6 +3,6 @@
 # key: list
 # group: bbcode
 # --
-[list=$1]
+[list${1:$(if (equal 0 (length text)) "" "=")}$1]
 [*]$0
 [/list]
