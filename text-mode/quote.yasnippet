@@ -3,4 +3,4 @@
 # key: quote
 # group: bbcode
 # --
-[quote=$1]$2[/quote]$0
+[quote${1:$(if (equal 0 (length text)) "" "=")}$1]${2:quoted text}[/quote]$0
