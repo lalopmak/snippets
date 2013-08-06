@@ -3,6 +3,12 @@
 # key: list
 # group: bbcode
 # --
-[list${1:$(if (equal 0 (length text)) "" "=")}$1]
+[list${1:$$(if (and yas-moving-away-p 
+                     (equal "=" text)) 
+                (let ((field (overlay-get yas--active-field-overlay 'yas--field)))
+                     (progn (yas--skip-and-clear field)
+                            (yas-next-field 1)))
+                (unless (eq ?= (string-to-char text)) 
+                        (concat "=" text)))}]
 [*]`yas-selected-text`$0
 [/list]
